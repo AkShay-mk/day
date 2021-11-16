@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day</title>
+    <style>
+        #parent{
+            width: 600px;
+            height: 250px;
+            box-shadow: 0 0 10px black;
+            margin: 200px auto;
+            background-image: linear-gradient(45deg,green,yellow);
+            
+
+        }
+        h2{
+            text-align: center;
+            padding-top: 15px;
+            color: red;
+        }
+        
+        button{
+            text-align: center;
+            margin-left: 70px;
+            background-color: blueviolet;
+            color: white;
+        }
+        body{
+            background-image: url("calender.jpg");
+        }
+    </style>
+    <script>
+        function gm(){
+            var gm=document.querySelector("h2")
+            gm.innerText="Good Morning Akshay!!!"
+            gm.style.color="blue"
+        }
+        function gan(){
+            var gan=document.querySelector("h2")
+            gan.innerText="Good After Noon Akshay!!!"
+            gan.style.color="pink"
+        }
+        function ge(){
+            var ge=document.querySelector("h2")
+            ge.innerText="Good Evining Akshay!!!"
+            ge.style.color="brown"
+
+        }
+    </script>
+</head>
+<body>
+    <div id="parent">
+     <h2>have a nice day</h2>
+     <br>
+     <br>
+     <br>
+     <button onclick="gm()"> Morning</button>
+     <button onclick="gan()"> Noon</button>
+     <button onclick="ge()"> Evining</button>
+     
+
+
+    </div>
+</body>
+</html>
